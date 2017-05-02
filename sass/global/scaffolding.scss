@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+
+  font-size: $body-font-size;
+  line-height: $body-font-height;
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  color: $body-font-color;
+  background-color: $body-bg-color;
+}

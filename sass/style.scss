@@ -1,0 +1,21 @@
+@import "normalize";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/scaffolding.scss";
+
+@import "blocks/description.scss";
+@import "blocks/feature.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-title.scss";
+@import "blocks/map.scss";
+@import "blocks/search.scss";
+@import "blocks/social-link.scss";
+@import "blocks/svg-sprite.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/wrapper-page.scss";

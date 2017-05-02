@@ -1,0 +1,15 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font-style($fs-size, $fs-height, $fs-color, $fs-weight: normal, $fs-transform: none) {
+  font-size: $fs-size;
+  line-height: $fs-height;
+  font-weight: $fs-weight;
+  text-transform: $fs-transform;
+  color: $fs-color;
+}
