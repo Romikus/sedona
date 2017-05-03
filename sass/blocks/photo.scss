@@ -1,0 +1,198 @@
+.photo__item {
+  margin: 0;
+
+  border-top: 1px solid #e5e5e5;
+
+  &:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo__item-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 20px 16px 20px;
+}
+
+.photo__card {
+  position: relative;
+
+  display: block;
+
+  text-align: center;
+}
+
+.photo__img {
+  width: 280px;
+  height: 280px;
+
+  vertical-align: top;
+}
+
+.photo__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background: #000;
+  opacity: 0;
+
+  transition: 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.photo__desc {
+  padding-top: 16px;
+
+  overflow: hidden;
+}
+
+.photo__name {
+  display: block;
+
+  white-space: nowrap;
+  @include font-style(14px, 24px, #000, bold, uppercase);
+}
+
+.photo__author {
+  display: block;
+
+  @include font-style(14px, 24px, #333);
+}
+
+.photo__like {
+  position: relative;
+
+  display: block;
+  min-height: 21px;
+  margin-top: 8px;
+  padding-left: 37px;
+
+  font-size: 0;
+  line-height: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background: url("../img/icon-like-dark.svg") no-repeat 0 0;
+  }
+}
+
+.photo__like-value {
+  @include font-style(14px, 24px, #000, bold);
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .photo {
+    @include clearfix();
+  }
+
+  .photo__item {
+    float: left;
+    width: 50%;
+
+    border-top: 0;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  .photo__item--big {
+    width: 100%;
+
+    .photo__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .photo__item-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo__img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__desc {
+    position: relative;
+
+    padding: 16px 84px 16px 20px;
+
+    background-color: #f2f2f2;
+  }
+
+  .photo__like {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    box-sizing: border-box;
+    width: 84px;
+    margin-top: 0;
+    padding-left: 31px;
+
+    transform: translateY(-50%);
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .photo__item {
+    position: relative;
+
+    width: calc(100%/3);
+  }
+
+  .photo__item--big {
+    width: 100%;
+  }
+
+  .photo__img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .photo__name {
+    color: #fff;
+  }
+
+  .photo__author {
+    color: #fff;
+  }
+
+  .photo__like {
+    &::before {
+      background-image: url("../img/icon-like-light.svg")
+    }
+  }
+
+  .photo__like-value {
+    color: #fff;
+  }
+}
