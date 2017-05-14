@@ -1,0 +1,58 @@
+.input-field {
+  padding: 16px 22px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+
+  &::-webkit-input-placeholder {
+    color: #000;
+  }
+
+  &::-moz-placeholder {
+    color: #000;
+  }
+
+  &:-moz-placeholder {
+    color: #000;
+  }
+
+  &:-ms-input-placeholder {
+    color: #000;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #e5e5e5 inset;
+  }
+}
+
+.input-field--phone,
+.input-field--mail {
+  padding-right: 80px;
+  box-shadow: -58px 0 0 0 #e6e6e6 inset;
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: -58px 0 0 0 #e6e6e6 inset,
+                  0 0 0 4px #e5e5e5 inset;
+  }
+}
+
+.input-field--error {
+  background-color: rgba(red, 0.3);
+}

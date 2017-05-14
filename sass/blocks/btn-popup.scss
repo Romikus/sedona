@@ -1,0 +1,30 @@
+.btn-popup{
+  display: block;
+  padding: 16px 10px 16px 10px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  background-color: #81b3d2;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(#fff,0.3);
+
+    background-color: #5496bd;
+  }
+}

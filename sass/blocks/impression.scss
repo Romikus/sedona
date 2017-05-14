@@ -1,0 +1,41 @@
+.impression__title {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.impression__item {
+  margin-bottom: 13px;
+}
+
+/* --------------- tablet ------------------ */
+@media #{$tablet-widths} {
+  .impression__content {
+    padding-right: 40px;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .impression__title {
+    margin-bottom: 58px;
+    text-align: left;
+  }
+
+  .impression__item {
+    margin-bottom: 22px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* --------------- desktop ------------------ */
+@media #{$desktop-widths} {
+  .impression__content {
+    padding-left: 4px;
+    padding-right: 50px;
+  }
+
+  .impression__title {
+    text-align: center;
+  }
+}
